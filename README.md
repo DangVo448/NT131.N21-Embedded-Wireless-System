@@ -1,10 +1,10 @@
 # NT131.N21 - Group 4 
 **Building an ESP8266-based app with Arduino IDE**
 
-**This App uses following tools:**
-**1. Arduino IDE for programming with ESP8266**
-**2. MIT App Inventor for designing Android-based front-end app and handling events**
-**3. Google Firebase for storing data and querying data**
+**This App uses following tools:\n**
+**1. Arduino IDE for programming with ESP8266\n**
+**2. MIT App Inventor for designing Android-based front-end app and handling events\n**
+**3. Google Firebase for storing data and querying data\n**
 
 **-----DEVELOPED PROTOTYPE-----**
 
