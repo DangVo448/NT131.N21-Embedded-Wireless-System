@@ -1,9 +1,9 @@
 
-//FirebaseESP8266.h must be included before ESP8266WiFi.h
-#include "FirebaseESP8266.h"  // Install Firebase ESP8266 library
+//FirebaseESP8266.h phải được include trước ESP8266WiFi.h
+#include "FirebaseESP8266.h"  // Cài đặt thư viện Firebase ESP8266 
 #include <ESP8266WiFi.h>
 
-#define FIREBASE_HOST "hethongbaotrom-b4955-default-rtdb.firebaseio.com/" //Without http:// or https:// schemes
+#define FIREBASE_HOST "hethongbaotrom-b4955-default-rtdb.firebaseio.com/" 
 #define FIREBASE_AUTH "4yEge3xYbiZktDtPHpvkHqVWobj48M7U2aaLZrP3"
 #define WIFI_SSID "T3.10 T3.11"
 #define WIFI_PASSWORD "Tanvubuilding01"
@@ -11,7 +11,7 @@
 int relay=2;//D4
 int cb=4;   //D2
 
-//Define FirebaseESP8266 data object
+//Khai báo FirebaseESP8266 data object
 FirebaseData firebaseData;
 
 
@@ -46,12 +46,12 @@ void setup()
 }
 
 void sensorUpdate(){
-  // Reading temperature or humidity takes about 250 milliseconds!
-  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  // Đọc nhiệt độ hoặc độ ẩm mất khoảng 250 mili giây!
+  // Các lần đọc cảm biến 'cũ' cũng có thể  tới 2 giây (đây là một cảm biến rất chậm)
+  
   int h = digitalRead(cb);
   Serial.print(F("cb: "));
   Serial.print(h);
-  
 
   if (Firebase.setInt(firebaseData, "/hethongbaotrom/cb", h))
   {
