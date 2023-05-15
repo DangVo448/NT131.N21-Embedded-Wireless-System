@@ -1,4 +1,4 @@
-# NT131.N21 - Group 4 
+# NT131.N21 - Group 3
 **Building an ESP8266-based app with Arduino IDE**
 
 **This App uses following tools:<br>**
